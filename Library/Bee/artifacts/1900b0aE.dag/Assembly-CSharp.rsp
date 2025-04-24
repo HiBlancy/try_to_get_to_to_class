@@ -367,12 +367,17 @@
 -r:"Library/Bee/artifacts/1900b0aE.dag/Unity.VSCode.Editor.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEditor.UI.ref.dll"
 -r:"Library/Bee/artifacts/1900b0aE.dag/UnityEngine.UI.ref.dll"
+"Assets/Scripts/GameManagement/ContadorGlobal.cs"
 "Assets/Scripts/GameManagement/FPSLimiter.cs"
-"Assets/Scripts/GameManagement/Pause.cs"
+"Assets/Scripts/GameManagement/MenuNiveles.cs"
+"Assets/Scripts/GameManagement/Nivel.cs"
 "Assets/Scripts/GameManagement/SelectLevelToPlay.cs"
+"Assets/Scripts/Kill.cs"
 "Assets/Scripts/MainMenu/MainMenuManagement.cs"
-"Assets/Scripts/Player/PlayerJump.cs"
-"Assets/Scripts/Player/PlayerMovment.cs"
+"Assets/Scripts/PlataformaMovil.cs"
+"Assets/Scripts/Player/PauseGame.cs"
+"Assets/Scripts/Player/PlayerMovement.cs"
+"Assets/Scripts/TriggerActivador.cs"
 -langversion:9.0
 
 /deterministic

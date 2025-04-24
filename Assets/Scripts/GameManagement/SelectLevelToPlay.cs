@@ -29,4 +29,12 @@ public class SelectLevelToPlay : MonoBehaviour
     {
         SceneManager.LoadScene("MainMenu");
     }
+
+    public void ResetearProgreso()
+    {
+        PlayerPrefs.DeleteKey("NivelMaximoDesbloqueado");
+        SceneManager.LoadScene("MainMenu");
+        PlayerPrefs.DeleteKey("MuertesGlobal");
+    }
+
 }
