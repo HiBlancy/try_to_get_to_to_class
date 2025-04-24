@@ -1,0 +1,26 @@
+# Ignorar archivos de log
+*.log
+
+# Ignorar archivos temporales generados por el sistema
+*.tmp
+*.bak
+*.swp
+*.swo
+
+# Ignorar directorios de caché comunes
+node_modules/
+Library/
+.vscode/
+.idea/
+*.DS_Store
+
+# Ignorar archivos específicos de Unity (si es un proyecto de Unity)
+Library/
+Temp/
+obj/
+Build/
+
+# Ignorar archivos de configuración personal (si estás trabajando con IDEs como VSCode o IntelliJ)
+.vscode/
+.idea/
+
