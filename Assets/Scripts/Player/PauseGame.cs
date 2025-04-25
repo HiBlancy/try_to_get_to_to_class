@@ -35,7 +35,9 @@ public class PauseGame : MonoBehaviour
     public void ResetLevel()
     {
         Time.timeScale = 1f;
+
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+
     }
 
     public void BackToGame()
@@ -51,6 +53,7 @@ public class PauseGame : MonoBehaviour
         optionsPanel.SetActive(true);
         GamePaused = true;
     }
+
     public void MainMenuScene()
     {
         SceneManager.LoadScene("MainMenu");

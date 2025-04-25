@@ -6,23 +6,28 @@ using TMPro;
 
 public class ContadorGlobal : MonoBehaviour
 {
-    public TMP_Text contadorGlobalText;  // Referencia al componente TextMeshPro
+    public TMP_Text contadorMuertesGlobalText;
+    public TMP_Text contadorMonedasGlobalText;
 
     void Start()
     {
-        // Obtener el valor de muertes globales desde PlayerPrefs
-        int muertesGlobal = PlayerPrefs.GetInt("MuertesGlobal", 0); // Si no existe, usará 0 como valor por defecto
+        int muertesGlobal = PlayerPrefs.GetInt("MuertesGlobal", 0);
+        int numeroMonedas = PlayerPrefs.GetInt("MonedasRecogidas", 0);
 
-        // Actualizar el texto con las muertes globales
-        ActualizarTextoGlobal(muertesGlobal);
+        ActualizarTextoGlobal(muertesGlobal, numeroMonedas);
     }
 
-    private void ActualizarTextoGlobal(int muertesGlobal)
+    private void ActualizarTextoGlobal(int muertesGlobal, int numeroMonedas)
     {
-        if (contadorGlobalText != null)
+        if (contadorMuertesGlobalText != null)
         {
-            // Mostrar el número de muertes en el UI
-            contadorGlobalText.text = muertesGlobal.ToString();
+            contadorMuertesGlobalText.text = muertesGlobal.ToString();
+        }
+
+        if (contadorMonedasGlobalText != null)
+        {
+            contadorMonedasGlobalText.text = numeroMonedas.ToString();
+
         }
     }
 }

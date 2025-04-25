@@ -5,6 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class MainMenuManagement : MonoBehaviour
 {
+    [SerializeField] GameObject mainPanel;
+    [SerializeField] GameObject optionsPanel;
+
     public void Play()
     {
         SceneManager.LoadSceneAsync("MainScene");
@@ -13,5 +16,17 @@ public class MainMenuManagement : MonoBehaviour
     public void CloseGame()
     {
         Application.Quit();
+    }
+
+    public void MainMenuPanel()
+    {
+        mainPanel.SetActive(true);
+        optionsPanel.SetActive(false);
+    }
+
+    public void SettingsPanel()
+    {
+        optionsPanel.SetActive(true);
+        mainPanel.SetActive(false);
     }
 }

@@ -7,7 +7,9 @@ using TMPro;
 public class MenuNiveles : MonoBehaviour
 {
 
-    public Button[] botonesNiveles; // Asigna en el inspector
+    public Button[] botonesNiveles;
+    public Sprite spriteBloqueado;
+    public Sprite spriteDesbloqueado;
 
     void Start()
     {
@@ -16,12 +18,17 @@ public class MenuNiveles : MonoBehaviour
         for (int i = 0; i < botonesNiveles.Length; i++)
         {
             int nivel = i + 1;
-            botonesNiveles[i].interactable = nivel <= maxNivel;
+            Button boton = botonesNiveles[i];
+            Image imagenBoton = boton.GetComponent<Image>();
+            TMP_Text textoBoton = boton.GetComponentInChildren<TMP_Text>();
 
-            if (nivel > maxNivel)
+            bool desbloqueado = nivel <= maxNivel;
+
+            boton.interactable = desbloqueado;
+
+            if (imagenBoton != null)
             {
-                botonesNiveles[i].GetComponentInChildren<TMP_Text>().text = "Bloqueado";
-                botonesNiveles[i].image.color = Color.gray;
+                imagenBoton.sprite = desbloqueado ? spriteDesbloqueado : spriteBloqueado;
             }
         }
     }

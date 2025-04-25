@@ -6,16 +6,23 @@ using UnityEngine.Events;
 public class TriggerActivador : MonoBehaviour
 {
     public UnityEvent alActivar;
-    public float retraso; // segundos de espera antes de activar
+    public float retraso;
+    public int vecesParaActivar;
 
-    private bool activado = false; // para evitar que se active más de una vez, opcional
+    private int contadorActivaciones = 0;
+    private bool yaActivado = false;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!activado && collision.CompareTag("Player"))
+        if (!yaActivado && collision.CompareTag("Player"))
         {
-            activado = true;
-            StartCoroutine(ActivarConRetraso());
+            contadorActivaciones++;
+
+            if (contadorActivaciones >= vecesParaActivar)
+            {
+                yaActivado = true;
+                StartCoroutine(ActivarConRetraso());
+            }
         }
     }
 

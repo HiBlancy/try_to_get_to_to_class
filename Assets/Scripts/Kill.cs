@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Kill : MonoBehaviour
 {
@@ -9,14 +10,24 @@ public class Kill : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            int muertesGlobal = PlayerPrefs.GetInt("MuertesGlobal", 0); // Obtén las muertes guardadas, si no hay se usa 0
-            muertesGlobal++;  // Aumentamos las muertes globales
+            AudioManager.obj.playKill();
+            int muertesGlobal = PlayerPrefs.GetInt("MuertesGlobal", 0);
+            muertesGlobal++;
 
-            // Guardar las muertes globales en PlayerPrefs
             PlayerPrefs.SetInt("MuertesGlobal", muertesGlobal);
-            PlayerPrefs.Save(); // Asegúrate de guardar los cambios
+            PlayerPrefs.Save();
 
-            PauseGame.obj.ResetLevel();
+            StartCoroutine(ReiniciarConSonido());
         }
+    }
+
+    private IEnumerator ReiniciarConSonido()
+    {
+        AudioManager.obj.playKill();
+
+        float duracion = AudioManager.obj.kill.length;
+        yield return new WaitForSeconds(duracion);
+
+        PauseGame.obj.ResetLevel();
     }
 }

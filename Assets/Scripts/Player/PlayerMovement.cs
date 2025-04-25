@@ -45,7 +45,6 @@ public class PlayerMovement : MonoBehaviour
 
     private void Update()
     {
-        // Movimiento horizontal (bloqueado al tocar pared)
         moveHorizontal = Input.GetAxisRaw("Horizontal");
         if (!(isTouchingWall && Mathf.Sign(moveHorizontal) == Mathf.Sign(transform.localScale.x)))
         {
@@ -56,21 +55,17 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(0, rb.velocity.y);
         }
 
-        // Detecciones
         isGrounded = CheckGrounded();
         isTouchingWall = CheckWalls();
 
-        // Salto
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded && canJump)
         {
             Jump();
         }
 
-        // Animaciones
         animator.SetBool("isMoving", moveHorizontal != 0);
         animator.SetBool("isGrounded", isGrounded);
 
-        // Flip del sprite
         if (moveHorizontal != 0)
         {
             transform.localScale = new Vector3(Mathf.Sign(moveHorizontal), 1, 1);
