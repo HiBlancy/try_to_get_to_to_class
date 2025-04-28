@@ -10,6 +10,8 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 5f;
     public float jumpForce = 12f;
     private float moveHorizontal;
+    public bool invertedControls = false;
+
 
     [Header("Ground Check")]
     [SerializeField] private LayerMask groundLayer;
@@ -46,6 +48,12 @@ public class PlayerMovement : MonoBehaviour
     private void Update()
     {
         moveHorizontal = Input.GetAxisRaw("Horizontal");
+
+        if (invertedControls)
+        {
+            moveHorizontal *= -1;
+        }
+
         if (!(isTouchingWall && Mathf.Sign(moveHorizontal) == Mathf.Sign(transform.localScale.x)))
         {
             rb.velocity = new Vector2(moveHorizontal * speed, rb.velocity.y);

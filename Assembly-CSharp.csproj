@@ -56,12 +56,16 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\Monedas\Moneda.cs" />
     <Compile Include="Assets\Scripts\Kill.cs" />
     <Compile Include="Assets\Scripts\GameManagement\MenuNiveles.cs" />
     <Compile Include="Assets\Scripts\GameManagement\ContadorGlobal.cs" />
+    <Compile Include="Assets\Scripts\ElementoVisible.cs" />
     <Compile Include="Assets\Scripts\GameManagement\Nivel.cs" />
     <Compile Include="Assets\Scripts\Pickup.cs" />
     <Compile Include="Assets\Scripts\GameManagement\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\Monedas\GestionDeNiveles.cs" />
+    <Compile Include="Assets\Scripts\GameManagement\PauseVolume.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
     <Compile Include="Assets\Scripts\TriggerActivador.cs" />
     <Compile Include="Assets\Scripts\MainMenu\AudioSettingsUI.cs" />
@@ -71,10 +75,6 @@
     <Compile Include="Assets\Scripts\GameManagement\MusicManager.cs" />
     <Compile Include="Assets\Scripts\PlataformaMovil.cs" />
     <Compile Include="Assets\Scripts\Player\PauseGame.cs" />
-    <Compile Include="Assets\Scripts\GameManagement\PauseVolume.cs" />
-    <Compile Include="Assets\Scripts\ElementoVisible.cs" />
-    <Compile Include="Assets\Scripts\Monedas\Moneda.cs" />
-    <Compile Include="Assets\Scripts\Monedas\GestionDeNiveles.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
