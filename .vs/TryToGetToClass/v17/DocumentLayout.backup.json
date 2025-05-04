@@ -3,7 +3,27 @@
   "WorkspaceRootPath": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|c:\\users\\ievar\\desktop\\unity\\trytogettoclass\\assets\\scripts\\gamemanagement\\selectleveltoplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|c:\\users\\ievar\\desktop\\unity\\trytogettoclass\\assets\\scripts\\triggeractivador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\triggeractivador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|c:\\users\\ievar\\desktop\\unity\\trytogettoclass\\assets\\scripts\\player\\speedreduce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\speedreduce.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\assets\\scripts\\kill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\kill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\assets\\scripts\\player\\pausegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\pausegame.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\assets\\scripts\\gamemanagement\\selectleveltoplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanagement\\selectleveltoplay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,24 +31,8 @@
       "RelativeMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanagement\\menuniveles.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\assets\\scripts\\monedas\\moneda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\monedas\\moneda.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|c:\\users\\ievar\\desktop\\unity\\trytogettoclass\\assets\\scripts\\elementovisible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\elementovisible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\assets\\scripts\\gamemanagement\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanagement\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\assets\\scripts\\gamemanagement\\nivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\gamemanagement\\nivel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\assets\\scripts\\kill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{05B1C7EF-AE78-FB2A-20B8-76A4679A2881}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\kill.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -43,71 +47,81 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "SelectLevelToPlay.cs",
-              "DocumentMoniker": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\GameManagement\\SelectLevelToPlay.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManagement\\SelectLevelToPlay.cs",
-              "ToolTip": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\GameManagement\\SelectLevelToPlay.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameManagement\\SelectLevelToPlay.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAADwv00AAAAAAAAAAAAAAA==",
+              "Title": "TriggerActivador.cs",
+              "DocumentMoniker": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\TriggerActivador.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\TriggerActivador.cs",
+              "ToolTip": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\TriggerActivador.cs",
+              "RelativeToolTip": "Assets\\Scripts\\TriggerActivador.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwA4AAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T08:39:54.726Z",
+              "WhenOpened": "2025-04-29T15:55:48.423Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ElementoVisible.cs",
-              "DocumentMoniker": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\ElementoVisible.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\ElementoVisible.cs",
-              "ToolTip": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\ElementoVisible.cs",
-              "RelativeToolTip": "Assets\\Scripts\\ElementoVisible.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "SpeedReduce.cs",
+              "DocumentMoniker": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\Player\\SpeedReduce.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\SpeedReduce.cs",
+              "ToolTip": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\Player\\SpeedReduce.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\SpeedReduce.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T08:07:18.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Moneda.cs",
-              "DocumentMoniker": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\Monedas\\Moneda.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Monedas\\Moneda.cs",
-              "ToolTip": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\Monedas\\Moneda.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Monedas\\Moneda.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T06:06:18.88Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Kill.cs",
-              "DocumentMoniker": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\Kill.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\Kill.cs",
-              "ToolTip": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\Kill.cs",
-              "RelativeToolTip": "Assets\\Scripts\\Kill.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAQwBgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T04:38:41.909Z",
+              "WhenOpened": "2025-04-29T15:55:25.857Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "AudioManager.cs",
-              "DocumentMoniker": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\GameManagement\\AudioManager.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManagement\\AudioManager.cs",
-              "ToolTip": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\GameManagement\\AudioManager.cs",
-              "RelativeToolTip": "Assets\\Scripts\\GameManagement\\AudioManager.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowDAAAAAsAAAAAAAAAA==",
+              "Title": "PauseGame.cs",
+              "DocumentMoniker": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\Player\\PauseGame.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PauseGame.cs",
+              "ToolTip": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\Player\\PauseGame.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PauseGame.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAArwCUAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-25T03:25:47.053Z",
+              "WhenOpened": "2025-04-28T05:30:10.242Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerMovement.cs",
+              "DocumentMoniker": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "ToolTip": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerMovement.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-28T03:28:25.822Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
+              "Title": "SelectLevelToPlay.cs",
+              "DocumentMoniker": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\GameManagement\\SelectLevelToPlay.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\GameManagement\\SelectLevelToPlay.cs",
+              "ToolTip": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\GameManagement\\SelectLevelToPlay.cs",
+              "RelativeToolTip": "Assets\\Scripts\\GameManagement\\SelectLevelToPlay.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBMAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T08:39:54.726Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Kill.cs",
+              "DocumentMoniker": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\Kill.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Kill.cs",
+              "ToolTip": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\Kill.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Kill.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T04:38:41.909Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Nivel.cs",
               "DocumentMoniker": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\GameManagement\\Nivel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManagement\\Nivel.cs",
@@ -115,21 +129,19 @@
               "RelativeToolTip": "Assets\\Scripts\\GameManagement\\Nivel.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAgwBYAAAAyAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T06:10:56.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T06:10:56.71Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "MenuNiveles.cs",
               "DocumentMoniker": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\GameManagement\\MenuNiveles.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\GameManagement\\MenuNiveles.cs",
               "ToolTip": "C:\\Users\\ievar\\Desktop\\Unity\\TryToGetToClass\\Assets\\Scripts\\GameManagement\\MenuNiveles.cs",
               "RelativeToolTip": "Assets\\Scripts\\GameManagement\\MenuNiveles.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-04-24T06:06:22.557Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-24T06:06:22.557Z"
             }
           ]
         }

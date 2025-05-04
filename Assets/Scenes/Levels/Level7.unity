@@ -909,6 +909,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 072f0a209b8b63243ae4d77706d5fc8c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  explosionEffect: {fileID: 0}
+  player: {fileID: 0}
 --- !u!1 &764533330
 GameObject:
   m_ObjectHideFlags: 0
@@ -2140,6 +2142,10 @@ PrefabInstance:
     - target: {fileID: 596989816, guid: 0f1882cbeb973a44386453a97a8ba823, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7595698265417757026, guid: 0f1882cbeb973a44386453a97a8ba823, type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7595698265417757030, guid: 0f1882cbeb973a44386453a97a8ba823, type: 3}
       propertyPath: m_Name

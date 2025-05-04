@@ -11,6 +11,7 @@ public class PlayerMovement : MonoBehaviour
     public float jumpForce = 12f;
     private float moveHorizontal;
     public bool invertedControls = false;
+    public bool autoJump = false;
 
 
     [Header("Ground Check")]
@@ -70,6 +71,11 @@ public class PlayerMovement : MonoBehaviour
         {
             Jump();
         }
+        else if (autoJump && isGrounded && canJump)
+        {
+            Jump();
+        }
+
 
         animator.SetBool("isMoving", moveHorizontal != 0);
         animator.SetBool("isGrounded", isGrounded);

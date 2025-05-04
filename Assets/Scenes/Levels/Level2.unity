@@ -423,6 +423,10 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 4.5
       objectReference: {fileID: 0}
+    - target: {fileID: 7595698265417757026, guid: 0f1882cbeb973a44386453a97a8ba823, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7595698265417757030, guid: 0f1882cbeb973a44386453a97a8ba823, type: 3}
       propertyPath: m_Name
       value: Player
