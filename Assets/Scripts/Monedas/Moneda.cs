@@ -51,18 +51,15 @@ public class Moneda : MonoBehaviour
     private void VerificarNivelExtraDesbloqueado()
     {
         int monedasRecogidas = PlayerPrefs.GetInt("MonedasRecogidas", 0);
-        int monedasTotales = 3; // CAMBAIR SEGUN LA CANTIDAD DE MONEDAS EN EL JUEGO 
+        int monedasTotales = 33;
         //NIVEL 1 -> 9
-        //NIVEL 2 -> 
-        //NIVEL 3 -> 
-        //NIVEL 4 -> 
-        //NIVEL 5 -> 
-        //NIVEL 6 -> 
-        //NIVEL 7 -> 
-        //NIVEL 8 -> 
-        //NIVEL 9 -> 
-        //NIVEL 10 -> 
-        //TOTAL ->
+        //NIVEL 2 -> 8
+        //NIVEL 3 -> 3
+        //NIVEL 4 -> 5
+        //NIVEL 5 -> 1
+        //NIVEL 6 -> 4
+        //NIVEL 7 -> 2
+        //TOTAL -> 33
 
         if (monedasRecogidas == monedasTotales)
         {

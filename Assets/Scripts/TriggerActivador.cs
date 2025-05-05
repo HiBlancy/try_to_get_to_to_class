@@ -12,6 +12,7 @@ public class TriggerActivador : MonoBehaviour
     private int contadorActivaciones = 0;
     private bool yaActivado = false;
 
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!yaActivado && collision.CompareTag("Player"))

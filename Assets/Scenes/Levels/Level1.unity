@@ -265,7 +265,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 75719091}
-  - component: {fileID: 75719092}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -325,20 +324,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &75719092
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 75719090}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3f0e16d5600c08346977d526f43fb843, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  objetosAparecer:
-  - {fileID: 479562186}
 --- !u!1 &100500719
 GameObject:
   m_ObjectHideFlags: 0
@@ -663,6 +648,8 @@ MonoBehaviour:
   distanciaMovimiento: -5
   velocidad: 6
   tiempoAVolver: 3
+  debeVolver: 1
+  velocidadVuelta: 2
 --- !u!4 &149125897
 Transform:
   m_ObjectHideFlags: 0
@@ -797,6 +784,8 @@ MonoBehaviour:
   distanciaMovimiento: 0
   velocidad: 2
   tiempoAVolver: 0
+  debeVolver: 1
+  velocidadVuelta: 2
 --- !u!50 &194812611
 Rigidbody2D:
   serializedVersion: 4
@@ -1200,7 +1189,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 286424822}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.030278206, y: -0.23252377, z: 0.07462962}
+  m_LocalPosition: {x: -0.23, y: -0.23252377, z: 0.07462962}
   m_LocalScale: {x: 0.6071829, y: 0.69689476, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1623,7 +1612,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9210206788320351105, guid: c52ab841c0b8745478def3322d9cfbad, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.3
+      value: -0.96
       objectReference: {fileID: 0}
     - target: {fileID: 9210206788320351105, guid: c52ab841c0b8745478def3322d9cfbad, type: 3}
       propertyPath: m_LocalPosition.z
@@ -1663,7 +1652,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9210206788320351111, guid: c52ab841c0b8745478def3322d9cfbad, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c52ab841c0b8745478def3322d9cfbad, type: 3}
@@ -1677,6 +1666,24 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9210206788320351111, guid: c52ab841c0b8745478def3322d9cfbad, type: 3}
   m_PrefabInstance: {fileID: 479562184}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &479562190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479562186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 94e88063532e369408f5950fe94c98ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ejeMovimiento: 1
+  distanciaMovimiento: 1
+  velocidad: 0.8
+  tiempoAVolver: 0
+  debeVolver: 0
+  velocidadVuelta: 0
 --- !u!4 &638946869 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9210206788320351105, guid: c52ab841c0b8745478def3322d9cfbad, type: 3}
@@ -1803,6 +1810,8 @@ MonoBehaviour:
   distanciaMovimiento: 0
   velocidad: 2
   tiempoAVolver: 0
+  debeVolver: 1
+  velocidadVuelta: 2
 --- !u!50 &696817829
 Rigidbody2D:
   serializedVersion: 4
@@ -2111,6 +2120,8 @@ MonoBehaviour:
   distanciaMovimiento: -5
   velocidad: 6
   tiempoAVolver: 3
+  debeVolver: 1
+  velocidadVuelta: 2
 --- !u!4 &867488042
 Transform:
   m_ObjectHideFlags: 0
@@ -2180,6 +2191,8 @@ MonoBehaviour:
   distanciaMovimiento: 0
   velocidad: 2
   tiempoAVolver: 0
+  debeVolver: 1
+  velocidadVuelta: 2
 --- !u!50 &947417012
 Rigidbody2D:
   serializedVersion: 4
@@ -2576,6 +2589,8 @@ MonoBehaviour:
   distanciaMovimiento: 0
   velocidad: 2
   tiempoAVolver: 0
+  debeVolver: 1
+  velocidadVuelta: 2
 --- !u!50 &1119468641
 Rigidbody2D:
   serializedVersion: 4
@@ -2819,9 +2834,9 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 75719092}
-        m_TargetAssemblyTypeName: ElementoVisible, Assembly-CSharp
-        m_MethodName: AparecerObjetos
+      - m_Target: {fileID: 479562190}
+        m_TargetAssemblyTypeName: PlataformaMovil, Assembly-CSharp
+        m_MethodName: Realizar
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2977,6 +2992,8 @@ MonoBehaviour:
   distanciaMovimiento: -5
   velocidad: 6
   tiempoAVolver: 3
+  debeVolver: 1
+  velocidadVuelta: 2
 --- !u!1001 &1294126426
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3264,6 +3281,8 @@ MonoBehaviour:
   distanciaMovimiento: 0
   velocidad: 2
   tiempoAVolver: 0
+  debeVolver: 1
+  velocidadVuelta: 2
 --- !u!50 &1362193164
 Rigidbody2D:
   serializedVersion: 4
@@ -3922,8 +3941,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1683610145}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 11.16761, y: -1.3506, z: 0}
-  m_LocalScale: {x: 0.35469583, y: 1.192025, z: 1}
+  m_LocalPosition: {x: 11.16761, y: -1.646, z: 0}
+  m_LocalScale: {x: 0.35469583, y: 1.7829117, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 75719091}
@@ -3942,9 +3961,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ejeMovimiento: 1
-  distanciaMovimiento: 0.7
+  distanciaMovimiento: 1.2
   velocidad: 5
   tiempoAVolver: 2
+  debeVolver: 1
+  velocidadVuelta: 2
 --- !u!4 &1684506427 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2207032935356582359, guid: 54d7af42efe8bd7469b30575ca4025b4, type: 3}
@@ -4704,7 +4725,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1813257772}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.630278, y: -0.23252377, z: 0.07462962}
+  m_LocalPosition: {x: 3.2, y: -0.23252377, z: 0.07462962}
   m_LocalScale: {x: 0.6071829, y: 0.69689476, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -4762,6 +4783,8 @@ MonoBehaviour:
   distanciaMovimiento: 0
   velocidad: 2
   tiempoAVolver: 0
+  debeVolver: 1
+  velocidadVuelta: 2
 --- !u!50 &1846352624
 Rigidbody2D:
   serializedVersion: 4

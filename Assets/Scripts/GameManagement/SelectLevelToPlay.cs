@@ -74,7 +74,7 @@ public class SelectLevelToPlay : MonoBehaviour
         PlayerPrefs.DeleteKey("MonedasRecogidas");
         PlayerPrefs.SetInt("NivelExtraDesbloqueado", 0);
 
-        int[] monedasPorNivel = new int[] { 9, 8}; // ejemplo
+        int[] monedasPorNivel = new int[] { 11, 9, 4, 7, 2, 5, 3}; // ejemplo
 
         for (int nivel = 1; nivel <= monedasPorNivel.Length; nivel++)
         {

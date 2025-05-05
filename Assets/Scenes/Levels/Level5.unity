@@ -465,11 +465,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2207032935356582359, guid: 54d7af42efe8bd7469b30575ca4025b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 22.217539
+      value: 22.22
       objectReference: {fileID: 0}
     - target: {fileID: 2207032935356582359, guid: 54d7af42efe8bd7469b30575ca4025b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.22
+      value: 15.78
       objectReference: {fileID: 0}
     - target: {fileID: 2207032935356582359, guid: 54d7af42efe8bd7469b30575ca4025b4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -709,7 +709,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001028574}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 18.46543, y: 15.767285, z: 0}
+  m_LocalPosition: {x: 18.47, y: 17.33, z: 0}
   m_LocalScale: {x: 14.961598, y: 2.493904, z: 4.215852}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -732,6 +732,8 @@ MonoBehaviour:
   distanciaMovimiento: 0
   velocidad: 2
   tiempoAVolver: 0
+  debeVolver: 1
+  velocidadVuelta: 2
 --- !u!50 &1001028577
 Rigidbody2D:
   serializedVersion: 4
@@ -1056,11 +1058,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2207032935356582359, guid: 54d7af42efe8bd7469b30575ca4025b4, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 14.918701
+      value: 14.92
       objectReference: {fileID: 0}
     - target: {fileID: 2207032935356582359, guid: 54d7af42efe8bd7469b30575ca4025b4, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 14.22
+      value: 15.78
       objectReference: {fileID: 0}
     - target: {fileID: 2207032935356582359, guid: 54d7af42efe8bd7469b30575ca4025b4, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2047,6 +2049,8 @@ MonoBehaviour:
   distanciaMovimiento: 35
   velocidad: 2.3
   tiempoAVolver: 6
+  debeVolver: 0
+  velocidadVuelta: 0
 --- !u!1 &2139902142
 GameObject:
   m_ObjectHideFlags: 0

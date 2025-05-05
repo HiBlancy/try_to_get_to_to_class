@@ -6,57 +6,56 @@ public class PlataformaMovil : MonoBehaviour
 {
     public enum EjeMovimiento { X, Y }
 
+    [Header("Configuración de Movimiento")]
     public EjeMovimiento ejeMovimiento;
     public float distanciaMovimiento;
     public float velocidad;
-    public float tiempoAVolver ;
+    public float tiempoAVolver;
+
+    [Header("Opciones de Regreso")]
+    public bool debeVolver = true;
+    public float velocidadVuelta = 2f;
 
     private Vector3 puntoInicial;
     private Vector3 puntoFinal;
-    private bool mover = false;
+    private bool enMovimiento = false;
 
-    void Start()
-    {
-        puntoInicial = transform.position;
 
-        CalcularPuntoFinal();
-    }
-
-    void Update()
-    {
-        if (mover)
-        {
-            transform.position = Vector3.MoveTowards(transform.position, puntoFinal, velocidad * Time.deltaTime);
-        }
-    }
 
     public void Realizar()
     {
-        StartCoroutine(MoverYRegresar());
+        puntoInicial = transform.position;
+        CalcularPuntoFinal();
+        if (enMovimiento) return; // Evita superposición de movimientos
+
+        StopAllCoroutines();
+        StartCoroutine(MoverHaciaDestino());
     }
 
-    private IEnumerator MoverYRegresar()
+    private IEnumerator MoverHaciaDestino()
     {
-        mover = true;
+        enMovimiento = true;
 
-        while (transform.position != puntoFinal)
+        // Mover hacia el puntoFinal (siempre la misma dirección)
+        yield return StartCoroutine(Mover(puntoFinal, velocidad));
+
+        if (debeVolver)
         {
-            yield return null;
+            yield return new WaitForSeconds(tiempoAVolver);
+            yield return StartCoroutine(Mover(puntoInicial, velocidadVuelta));
         }
 
-        yield return new WaitForSeconds(tiempoAVolver);
-
-        mover = false;
-        StartCoroutine(MoverDeRegreso());
+        enMovimiento = false;
     }
 
-    private IEnumerator MoverDeRegreso()
+    private IEnumerator Mover(Vector3 destino, float vel)
     {
-        while (transform.position != puntoInicial)
+        while (Vector3.Distance(transform.position, destino) > 0.01f)
         {
-            transform.position = Vector3.MoveTowards(transform.position, puntoInicial, velocidad * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, destino, vel * Time.deltaTime);
             yield return null;
         }
+        transform.position = destino;
     }
 
     private void CalcularPuntoFinal()
@@ -64,10 +63,10 @@ public class PlataformaMovil : MonoBehaviour
         switch (ejeMovimiento)
         {
             case EjeMovimiento.X:
-                puntoFinal = new Vector3(puntoInicial.x + distanciaMovimiento, puntoInicial.y, puntoInicial.z);
+                puntoFinal = puntoInicial + Vector3.right * distanciaMovimiento;
                 break;
             case EjeMovimiento.Y:
-                puntoFinal = new Vector3(puntoInicial.x, puntoInicial.y + distanciaMovimiento, puntoInicial.z);
+                puntoFinal = puntoInicial + Vector3.up * distanciaMovimiento;
                 break;
         }
     }
